@@ -1,8 +1,8 @@
 {
-  "name": "quasar-modular-sample",
+  "name": "medium-quasar-rxjs",
   "version": "0.0.1",
-  "description": "Quasar Modular Application Sample Project",
-  "productName": "Quasar Modular App",
+  "description": "Quasar RxJS Sample Project",
+  "productName": "Quasar RxJS Sample Project",
   "author": "Pablo Pérez <dalotodo69@gmail.com>",
   "private": true,
   "scripts": {

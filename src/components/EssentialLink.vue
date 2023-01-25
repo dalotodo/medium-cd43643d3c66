@@ -2,8 +2,8 @@
   <q-item
     clickable
     tag="a"
-    target="_blank"
     :href="link"
+    :to="to"
   >
     <q-item-section
       v-if="icon"
@@ -20,15 +20,17 @@
 </template>
 
 <script setup lang="ts">
+import { RouteLocationRaw } from 'vue-router';
+
 export interface EssentialLinkProps {
   title: string;
   caption?: string;
   link?: string;
+  to?: RouteLocationRaw;
   icon?: string;
 }
 withDefaults(defineProps<EssentialLinkProps>(), {
   caption: '',
-  link: '#',
   icon: '',
 });
 </script>
