@@ -16,6 +16,13 @@ const routes: RouteRecordRaw[] = [
     children: [{ name: 'mock-index', path: '', component: () => import('pages/MockingPage.vue') }],
   },
   {
+    name: 'chatroom',
+    path: '/chatroom',
+    component: () => import('layouts/MainLayout.vue'),
+    redirect: { name: 'chatroom-index' },
+    children: [{ name: 'chatroom-index', path: '', component: () => import('pages/ChatroomPage.vue') }],
+  },
+  {
     name: 'benchmark',
     path: '/benchmark',
     component: () => import('layouts/MainLayout.vue'),
